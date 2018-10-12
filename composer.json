@@ -1,0 +1,33 @@
+{
+    "name": "antavo/loyalty-sdk-php",
+    "description": "Antavo Loyalty SDK for PHP",
+    "type": "library",
+    "authors": [
+        {
+            "name": "plastik",
+            "email": "gabor@antavo.com"
+        }
+    ],
+    "config": {
+        "secure-http": false
+    },
+    "require": {
+        "php": ">=5.5",
+        "emartech/escher": "^0.2.13",
+        "antavo/rest-client-php": "*@dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "http://davros:3000/Antavo/rest-client-php"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Antavo\\Sdk\\": "src/"
+        }
+    }
+}
