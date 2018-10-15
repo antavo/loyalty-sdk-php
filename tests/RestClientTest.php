@@ -10,7 +10,7 @@ class RestClientTest extends PHPUnit\Framework\TestCase {
     public function testInheritance() {
         $this->assertInstanceOf(
             \Pakard\RestClient\RestClient::class,
-            new \Antavo\Sdk\RestClient
+            new \Antavo\Sdk\RestClient('st2', 'key', 'secret')
         );
     }
 }
