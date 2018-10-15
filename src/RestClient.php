@@ -92,4 +92,18 @@ class RestClient extends \Pakard\RestClient\RestClient {
 
         $this->signRequest($this->getRequest());
     }
+
+    /**
+     * @param string $customer
+     * @param string $action
+     * @param array $data
+     * @return mixed
+     */
+    public function sendEvent($customer, $action, array $data = []) {
+        return $this->send(
+            RequestInterface::METHOD_POST,
+            '/events',
+            compact('customer', 'action', 'data')
+        );
+    }
 }
