@@ -12,13 +12,16 @@
             "source": {
                 "type": "git",
                 "url": "http://davros:3000/Antavo/rest-client-php",
-                "reference": "5068c9b64fc9b6c56c4b451a4dc997de48059926"
+                "reference": "3ca55399b819be4fdedd032eb43b77b987cfd865"
             },
             "require": {
                 "php": ">=5.5"
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.8"
+            },
+            "suggest": {
+                "ext-xml": "*"
             },
             "type": "library",
             "autoload": {
@@ -33,7 +36,7 @@
                 }
             ],
             "description": "A rather straightforward and lightweight, yet flexible helper class to perform operations on a RESTful API with cURL -- or with any custom transport implementation",
-            "time": "2018-10-12T12:31:52+00:00"
+            "time": "2018-10-13T10:50:52+00:00"
         },
         {
             "name": "emartech/escher",
