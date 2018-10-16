@@ -90,7 +90,11 @@ class RestClient extends \Pakard\RestClient\RestClient {
             $this->setTransport(new CurlTransport);
         }
 
-        $this->signRequest($this->getRequest());
+        $this->signRequest(
+            $request = $this->getRequest()
+                ->addHeader('Content-Type', 'application/json; charset="UTF-8"')
+                ->addHeader('User-Agent', 'Antavo Loyalty PHP SDK Client 2.0')
+        );
     }
 
     /**
