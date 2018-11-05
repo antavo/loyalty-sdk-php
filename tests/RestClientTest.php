@@ -1,4 +1,6 @@
 <?php
+use Antavo\LoyaltySdk\RestClient;
+use Pakard\RestClient\RequestInterface;
 
 /**
  *
@@ -10,7 +12,7 @@ class RestClientTest extends PHPUnit\Framework\TestCase {
     public function testInheritance() {
         $this->assertInstanceOf(
             \Pakard\RestClient\RestClient::class,
-            new \Antavo\LoyaltySdk\RestClient('st2', 'key', 'secret')
+            new RestClient('st2', 'key', 'secret')
         );
     }
 
@@ -20,7 +22,7 @@ class RestClientTest extends PHPUnit\Framework\TestCase {
     public function testConstructor() {
         $this->assertSame(
             'https://api.st2.antavo.com',
-            (new Antavo\LoyaltySdk\RestClient('st2', 'key', 'secret'))->getBaseUrl()
+            (new RestClient('st2', 'key', 'secret'))->getBaseUrl()
         );
     }
 
@@ -30,8 +32,35 @@ class RestClientTest extends PHPUnit\Framework\TestCase {
     public function testGetCredentialScope() {
         $this->assertSame(
             'st2/api/antavo_request',
-            (new Antavo\LoyaltySdk\RestClient('st2', 'key', 'secret'))
+            (new RestClient('st2', 'key', 'secret'))
                 ->getCredentialScope()
         );
+    }
+
+    /**
+     * @covers \Antavo\LoyaltySdk\RestClient::sendEvent()
+     */
+    public function testSendEvent() {
+        $client = $this->getMockBuilder(RestClient::class)
+            ->setMethods(['send'])
+            ->setConstructorArgs(['region', 'key', 'secret'])
+            ->getMock();
+
+        $client->expects($this->once())
+            ->method('send')
+            ->with(
+                $this->equalTo(RequestInterface::METHOD_POST),
+                $this->equalTo('/events'),
+                $this->equalTo(
+                    [
+                        'customer' => 'customer1',
+                        'action' => 'opt_in',
+                        'data' => [],
+                    ]
+                )
+            );
+
+        /** @var RestClient $client */
+        $client->sendEvent('customer1', 'opt_in');
     }
 }
