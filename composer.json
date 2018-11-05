@@ -14,7 +14,8 @@
     "require": {
         "php": ">=5.5",
         "emartech/escher": "^0.2.13",
-        "antavo/rest-client-php": "*@dev"
+        "antavo/rest-client-php": "*@dev",
+        "antavo/signed-token": "^1.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^4.8"
@@ -27,7 +28,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Antavo\\Sdk\\": "src/"
+            "Antavo\\LoyaltySdk\\": "src/"
         }
     }
 }

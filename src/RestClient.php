@@ -1,5 +1,5 @@
 <?php
-namespace Antavo\Sdk;
+namespace Antavo\LoyaltySdk;
 
 use Pakard\RestClient\CurlTransport;
 use Pakard\RestClient\RequestInterface;

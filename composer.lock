@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3c5a637d66ae727e3c8658cededb5e27",
+    "content-hash": "55e23a49fb95b6c79e4ae3c6e1c97a61",
     "packages": [
         {
             "name": "antavo/rest-client-php",
@@ -37,6 +37,40 @@
             ],
             "description": "A rather straightforward and lightweight, yet flexible helper class to perform operations on a RESTful API with cURL -- or with any custom transport implementation",
             "time": "2018-10-13T10:50:52+00:00"
+        },
+        {
+            "name": "antavo/signed-token",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/antavo-loyalty/signed-token.git",
+                "reference": "62c37135f8a684599646838e08571d60e530e153"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/antavo-loyalty/signed-token/zipball/62c37135f8a684599646838e08571d60e530e153",
+                "reference": "62c37135f8a684599646838e08571d60e530e153",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "apigen/apigen": "*",
+                "phpunit/phpunit": "4.8.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Antavo\\SignedToken\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "description": "Library to create and check signed tokens",
+            "time": "2016-01-08T07:04:20+00:00"
         },
         {
             "name": "emartech/escher",
