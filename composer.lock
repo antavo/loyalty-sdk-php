@@ -12,9 +12,10 @@
             "source": {
                 "type": "git",
                 "url": "http://davros:3000/Antavo/rest-client-php",
-                "reference": "3ca55399b819be4fdedd032eb43b77b987cfd865"
+                "reference": "9ca841d629d07b49a5a65450a2d39689c05f4699"
             },
             "require": {
+                "ext-curl": "*",
                 "php": ">=5.5"
             },
             "require-dev": {
@@ -36,7 +37,7 @@
                 }
             ],
             "description": "A rather straightforward and lightweight, yet flexible helper class to perform operations on a RESTful API with cURL -- or with any custom transport implementation",
-            "time": "2018-10-13T10:50:52+00:00"
+            "time": "2018-11-06T15:14:22+00:00"
         },
         {
             "name": "antavo/signed-token",
@@ -1152,7 +1153,7 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.9.0",
+            "version": "v1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
@@ -1210,7 +1211,7 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.4.17",
+            "version": "v3.4.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
