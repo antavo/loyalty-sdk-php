@@ -1,0 +1,15 @@
+{
+  "main": "vendor/autoload.php",
+  "directories": ["src"],
+  "finder": [
+    {
+      "name": "*.php",
+      "exclude": ["test", "tests", "docs"],
+      "in": "vendor"
+    }
+  ],
+  "stub": true,
+  "git-version": "VERSION",
+  "alias": "antavo-loyalty-sdk.phar",
+  "output": "antavo-loyalty-sdk.phar"
+}
