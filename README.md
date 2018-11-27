@@ -64,7 +64,7 @@ public function send(string $method, string $url, mixed $data = NULL): mixed;
 It makes possible to perform any kind of REST request:
 
 ~~~php
-$response = $client->send('GET', '/customer' . $customer->id);
+$response = $client->send('GET', '/customer/' . $customer->id);
 ~~~
 
 `$response` will hold the parsed JSON response.
