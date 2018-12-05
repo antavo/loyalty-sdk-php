@@ -57,17 +57,22 @@ class RestClient extends \Pakard\RestClient\RestClient {
     }
 
     /**
-     * @param \Pakard\RestClient\RequestInterface $request
-     * @return $this
+     * @return \Escher
      */
-    public function signRequest(RequestInterface $request) {
-        $escher = \Escher::create($this->getCredentialScope())
+    public function createEscher() {
+        return \Escher::create($this->getCredentialScope())
             ->setVendorKey('Antavo')
             ->setAlgoPrefix('ANTAVO')
             ->setDateHeaderKey('Date')
             ->setAuthHeaderKey('Authorization');
+    }
 
-        $headers = $escher->signRequest(
+    /**
+     * @param \Pakard\RestClient\RequestInterface $request
+     * @return $this
+     */
+    public function signRequest(RequestInterface $request) {
+        $headers = $this->createEscher()->signRequest(
             $this->_key,
             $this->_secret,
             $request->getMethod(),

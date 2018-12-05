@@ -38,6 +38,14 @@ class RestClientTest extends PHPUnit\Framework\TestCase {
     }
 
     /**
+     * @covers \Antavo\Loyalty\Sdk\RestClient::createEscher()
+     */
+    public function testCreateEscher() {
+        $escher = (new RestClient('st2', 'key', 'secret'))->createEscher();
+        $this->assertInstanceOf(\Escher::class, $escher);
+    }
+
+    /**
      * @covers \Antavo\Loyalty\Sdk\RestClient::sendEvent()
      */
     public function testSendEvent() {
