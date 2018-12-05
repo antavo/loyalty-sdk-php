@@ -1,5 +1,5 @@
 <?php
-use Antavo\LoyaltySdk\RestClient;
+use Antavo\Loyalty\Sdk\RestClient;
 use Pakard\RestClient\RequestInterface;
 
 /**
@@ -17,7 +17,7 @@ class RestClientTest extends PHPUnit\Framework\TestCase {
     }
 
     /**
-     * @covers \Antavo\LoyaltySdk\RestClient::__construct()
+     * @covers \Antavo\Loyalty\Sdk\RestClient::__construct()
      */
     public function testConstructor() {
         $this->assertSame(
@@ -27,7 +27,7 @@ class RestClientTest extends PHPUnit\Framework\TestCase {
     }
 
     /**
-     * @covers \Antavo\LoyaltySdk\RestClient::getCredentialScope()
+     * @covers \Antavo\Loyalty\Sdk\RestClient::getCredentialScope()
      */
     public function testGetCredentialScope() {
         $this->assertSame(
@@ -38,7 +38,7 @@ class RestClientTest extends PHPUnit\Framework\TestCase {
     }
 
     /**
-     * @covers \Antavo\LoyaltySdk\RestClient::sendEvent()
+     * @covers \Antavo\Loyalty\Sdk\RestClient::sendEvent()
      */
     public function testSendEvent() {
         $client = $this->getMockBuilder(RestClient::class)

@@ -1,5 +1,5 @@
 <?php
-namespace Antavo\LoyaltySdk;
+namespace Antavo\Loyalty\Sdk;
 
 use Antavo\SignedToken\SignedToken;
 
@@ -111,8 +111,8 @@ class CustomerToken extends SignedToken {
      * Sets customer token cookie.
      *
      * @return bool
-     * @see \Antavo\LoyaltySdk\CustomerToken::getCookieName()
-     * @see \Antavo\LoyaltySdk\CustomerToken::setCookieName()
+     * @see \Antavo\Loyalty\Sdk\CustomerToken::getCookieName()
+     * @see \Antavo\Loyalty\Sdk\CustomerToken::setCookieName()
      */
     public function setCookie() {
         return setcookie(
