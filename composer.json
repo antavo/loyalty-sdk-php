@@ -23,7 +23,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "http://davros:3000/Antavo/rest-client-php"
+            "url": "https://composer:FtVR8G52gJ@gitlab.antavo.com/antavo/rest-client-php.git"
         }
     ],
     "autoload": {
