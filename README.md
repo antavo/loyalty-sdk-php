@@ -41,7 +41,7 @@ It uses two other libraries:
 #### Creating an instance
 
 ~~~php
-$client = new Antavo\LoyaltySdk\RestClient('REGION', 'API KEY', 'API SECRET');
+$client = new Antavo\Loyalty\Sdk\RestClient('REGION', 'API KEY', 'API SECRET');
 ~~~
 
 Where:
@@ -123,13 +123,13 @@ There may occur other kind of exceptions, all descendants of `Pakard\RestClient\
 
 ### Customer Token
 
-`Antavo\LoyaltySdk\CustomerToken` is used to create & validate web tokens to authenticate the customer in the embedded loyalty hub.
+`Antavo\Loyalty\Sdk\CustomerToken` is used to create & validate web tokens to authenticate the customer in the embedded loyalty hub.
 
 #### Creating an instance
 
 ~~~php
 // Initializing a new token with the secret and with expiration time.
-$token = new Antavo\LoyaltySdk\CustomerToken('API SECRET', $expires_in);
+$token = new Antavo\Loyalty\Sdk\CustomerToken('API SECRET', $expires_in);
 ~~~
 
 * `API SECRET` used to attach a hash to the token, so later it can be validated.
@@ -143,7 +143,7 @@ Upon instantiation the token sets itself a default cookie domain from the enviro
 It can be retrieved by setting a customer ID, then simply casting the token object to string:
 
 ~~~php
-echo (string) (new Antavo\LoyaltySdk\CustomerToken('API SECRET', $expires_in))
+echo (string) (new Antavo\Loyalty\Sdk\CustomerToken('API SECRET', $expires_in))
     ->setCustomer($customer->id);
 ~~~
 
@@ -153,7 +153,7 @@ echo (string) (new Antavo\LoyaltySdk\CustomerToken('API SECRET', $expires_in))
 Setting a customer token cookie:
 
 ~~~php
-$token = (new Antavo\LoyaltySdk\CustomerToken('API SECRET', $expires_in))
+$token = (new Antavo\Loyalty\Sdk\CustomerToken('API SECRET', $expires_in))
     ->setCustomer($customer->id);
 
 if (!$token->setCookie()) {
@@ -171,7 +171,7 @@ $token->unsetCookie();
 #### Retrieving cookie value
 
 ~~~php
-$token = new Antavo\LoyaltySdk\CustomerToken('API SECRET', $expires_in);
+$token = new Antavo\Loyalty\Sdk\CustomerToken('API SECRET', $expires_in);
 
 try {
     if (isset($_COOKIE[$token->getCookieName()]) {
