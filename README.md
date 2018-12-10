@@ -7,6 +7,7 @@
   * [Including the Library](#including-the-library)
   * [The REST Client](#the-rest-client)
   * [Customer Token](#customer-token)
+  * [Validating Webhook Messages](#validating-webhook-messages)
 
 
 ## Requirements
@@ -181,3 +182,26 @@ try {
     // The token is either expired or invalid...
 }
 ~~~
+
+
+## Validating Webhook Messages
+
+There are cases when you need to handle webhook messages sent by Antavo. You can also use the REST client to authenticate such requests:
+
+~~~php
+// Creating a REST client with valid region and credentials
+// (though credentials won't be used for authentication -- see below).
+$client = new Antavo\Loyalty\Sdk\RestClient('REGION', 'API KEY', 'API SECRET');
+
+// Obtaining a configured Escher client from the REST client.
+$escher = $client->createEscher();
+
+// Authenticating current request using credential key-value pairs.
+$escher->authenticate(
+    [
+        'API KEY' => 'API SECRET'
+    ]
+);
+~~~
+
+For further details see the [EscherPHP documentation page](https://github.com/emartech/escher-php#validating-a-request).
