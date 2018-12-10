@@ -4,15 +4,15 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "55e23a49fb95b6c79e4ae3c6e1c97a61",
+    "content-hash": "01d2e6ad705e2ce87fd932b6f51e800a",
     "packages": [
         {
             "name": "antavo/rest-client-php",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "http://davros:3000/Antavo/rest-client-php",
-                "reference": "9ca841d629d07b49a5a65450a2d39689c05f4699"
+                "url": "https://composer:FtVR8G52gJ@gitlab.antavo.com/antavo/rest-client-php.git",
+                "reference": "18bdcaf479e7402b7794ca83bbd315c1b841dc2b"
             },
             "require": {
                 "ext-curl": "*",
@@ -37,7 +37,7 @@
                 }
             ],
             "description": "A rather straightforward and lightweight, yet flexible helper class to perform operations on a RESTful API with cURL -- or with any custom transport implementation",
-            "time": "2018-11-06T15:14:22+00:00"
+            "time": "2018-12-01T06:23:23+00:00"
         },
         {
             "name": "antavo/signed-token",
@@ -1211,16 +1211,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.4.18",
+            "version": "v3.4.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "640b6c27fed4066d64b64d5903a86043f4a4de7f"
+                "reference": "291e13d808bec481eab83f301f7bff3e699ef603"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/640b6c27fed4066d64b64d5903a86043f4a4de7f",
-                "reference": "640b6c27fed4066d64b64d5903a86043f4a4de7f",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/291e13d808bec481eab83f301f7bff3e699ef603",
+                "reference": "291e13d808bec481eab83f301f7bff3e699ef603",
                 "shasum": ""
             },
             "require": {
@@ -1266,7 +1266,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2018-10-02T16:33:53+00:00"
+            "time": "2018-11-11T19:48:54+00:00"
         },
         {
             "name": "webmozart/assert",
