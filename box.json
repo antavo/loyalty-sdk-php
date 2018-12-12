@@ -10,6 +10,7 @@
     }
   ],
   "stub": true,
+  "shebang": false,
   "git-version": "VERSION",
   "alias": "antavo-loyalty-sdk.phar",
   "output": "antavo-loyalty-sdk.phar"
