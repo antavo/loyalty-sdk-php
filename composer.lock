@@ -4,41 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "01d2e6ad705e2ce87fd932b6f51e800a",
+    "content-hash": "57216c816e1fae53d7aa6a78e1e9383b",
     "packages": [
-        {
-            "name": "antavo/rest-client-php",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://composer:FtVR8G52gJ@gitlab.antavo.com/antavo/rest-client-php.git",
-                "reference": "18bdcaf479e7402b7794ca83bbd315c1b841dc2b"
-            },
-            "require": {
-                "ext-curl": "*",
-                "php": ">=5.5"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.8"
-            },
-            "suggest": {
-                "ext-xml": "*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Pakard\\RestClient\\": "src/"
-                }
-            },
-            "authors": [
-                {
-                    "name": "plastik",
-                    "email": "gabor@antavo.com"
-                }
-            ],
-            "description": "A rather straightforward and lightweight, yet flexible helper class to perform operations on a RESTful API with cURL -- or with any custom transport implementation",
-            "time": "2018-12-01T06:23:23+00:00"
-        },
         {
             "name": "antavo/signed-token",
             "version": "1.0.2",
@@ -137,6 +104,46 @@
                 "signature"
             ],
             "time": "2016-09-13T15:06:45+00:00"
+        },
+        {
+            "name": "pakard/rest-client-php",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pakard/rest-client-php.git",
+                "reference": "81c43c3b7303b990ebc6e463d7ee79a69cab33f2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pakard/rest-client-php/zipball/81c43c3b7303b990ebc6e463d7ee79a69cab33f2",
+                "reference": "81c43c3b7303b990ebc6e463d7ee79a69cab33f2",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8"
+            },
+            "suggest": {
+                "ext-xml": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Pakard\\RestClient\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "plastik",
+                    "email": "gabor@antavo.com"
+                }
+            ],
+            "description": "A rather straightforward and lightweight, yet flexible helper class to perform operations on a RESTful API with cURL -- or with any custom transport implementation",
+            "time": "2019-01-17T09:39:54+00:00"
         }
     ],
     "packages-dev": [
@@ -1211,16 +1218,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.4.20",
+            "version": "v3.4.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "291e13d808bec481eab83f301f7bff3e699ef603"
+                "reference": "554a59a1ccbaac238a89b19c8e551a556fd0e2ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/291e13d808bec481eab83f301f7bff3e699ef603",
-                "reference": "291e13d808bec481eab83f301f7bff3e699ef603",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/554a59a1ccbaac238a89b19c8e551a556fd0e2ea",
+                "reference": "554a59a1ccbaac238a89b19c8e551a556fd0e2ea",
                 "shasum": ""
             },
             "require": {
@@ -1266,24 +1273,25 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2018-11-11T19:48:54+00:00"
+            "time": "2019-01-01T13:45:19+00:00"
         },
         {
             "name": "webmozart/assert",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/assert.git",
-                "reference": "0df1908962e7a3071564e857d86874dad1ef204a"
+                "reference": "83e253c8e0be5b0257b881e1827274667c5c17a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/0df1908962e7a3071564e857d86874dad1ef204a",
-                "reference": "0df1908962e7a3071564e857d86874dad1ef204a",
+                "url": "https://api.github.com/repos/webmozart/assert/zipball/83e253c8e0be5b0257b881e1827274667c5c17a9",
+                "reference": "83e253c8e0be5b0257b881e1827274667c5c17a9",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.3.3 || ^7.0"
+                "php": "^5.3.3 || ^7.0",
+                "symfony/polyfill-ctype": "^1.8"
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.6",
@@ -1316,14 +1324,12 @@
                 "check",
                 "validate"
             ],
-            "time": "2018-01-29T19:49:41+00:00"
+            "time": "2018-12-25T11:19:39+00:00"
         }
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "antavo/rest-client-php": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
