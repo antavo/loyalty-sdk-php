@@ -4,53 +4,19 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "57216c816e1fae53d7aa6a78e1e9383b",
+    "content-hash": "bcd55ce51a164f9aa9426fcb59978517",
     "packages": [
         {
-            "name": "antavo/signed-token",
-            "version": "1.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/antavo-loyalty/signed-token.git",
-                "reference": "62c37135f8a684599646838e08571d60e530e153"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/antavo-loyalty/signed-token/zipball/62c37135f8a684599646838e08571d60e530e153",
-                "reference": "62c37135f8a684599646838e08571d60e530e153",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3"
-            },
-            "require-dev": {
-                "apigen/apigen": "*",
-                "phpunit/phpunit": "4.8.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Antavo\\SignedToken\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0"
-            ],
-            "description": "Library to create and check signed tokens",
-            "time": "2016-01-08T07:04:20+00:00"
-        },
-        {
-            "name": "emartech/escher",
+            "name": "antavo/escher-php",
             "version": "0.2.13",
             "source": {
                 "type": "git",
-                "url": "https://github.com/emartech/escher-php.git",
+                "url": "https://github.com/antavo/escher-php.git",
                 "reference": "8017fa125c61b9acf884522bcce8c4320d1806e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/emartech/escher-php/zipball/8017fa125c61b9acf884522bcce8c4320d1806e0",
+                "url": "https://api.github.com/repos/antavo/escher-php/zipball/8017fa125c61b9acf884522bcce8c4320d1806e0",
                 "reference": "8017fa125c61b9acf884522bcce8c4320d1806e0",
                 "shasum": ""
             },
@@ -104,6 +70,40 @@
                 "signature"
             ],
             "time": "2016-09-13T15:06:45+00:00"
+        },
+        {
+            "name": "antavo/signed-token",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/antavo-loyalty/signed-token.git",
+                "reference": "62c37135f8a684599646838e08571d60e530e153"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/antavo-loyalty/signed-token/zipball/62c37135f8a684599646838e08571d60e530e153",
+                "reference": "62c37135f8a684599646838e08571d60e530e153",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "apigen/apigen": "*",
+                "phpunit/phpunit": "4.8.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Antavo\\SignedToken\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "description": "Library to create and check signed tokens",
+            "time": "2016-01-08T07:04:20+00:00"
         },
         {
             "name": "pakard/rest-client-php",
