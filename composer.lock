@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "22c40c952dc5b98eda13fa50a3d4efc9",
+    "content-hash": "bcd55ce51a164f9aa9426fcb59978517",
     "packages": [
         {
             "name": "antavo/escher-php",
@@ -107,16 +107,16 @@
         },
         {
             "name": "pakard/rest-client-php",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pakard/rest-client-php.git",
-                "reference": "269367c9e0e08c6349f7ebfe1d1b547380625ab6"
+                "reference": "0db57113462e0e8890c5455272434e8801237921"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pakard/rest-client-php/zipball/269367c9e0e08c6349f7ebfe1d1b547380625ab6",
-                "reference": "269367c9e0e08c6349f7ebfe1d1b547380625ab6",
+                "url": "https://api.github.com/repos/pakard/rest-client-php/zipball/0db57113462e0e8890c5455272434e8801237921",
+                "reference": "0db57113462e0e8890c5455272434e8801237921",
                 "shasum": ""
             },
             "require": {
@@ -143,7 +143,7 @@
                 }
             ],
             "description": "A rather straightforward and lightweight, yet flexible helper class to perform operations on a RESTful API with cURL -- or with any custom transport implementation",
-            "time": "2019-05-17T10:22:48+00:00"
+            "time": "2019-06-13T13:11:22+00:00"
         }
     ],
     "packages-dev": [

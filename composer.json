@@ -14,7 +14,7 @@
     "require": {
         "php": ">=5.5",
         "antavo/escher-php": "^0.2.13",
-        "pakard/rest-client-php": "1.0.2",
+        "pakard/rest-client-php": "^1.0",
         "antavo/signed-token": "^1.0"
     },
     "require-dev": {
